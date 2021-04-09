@@ -100,8 +100,8 @@ option_level : 해당 수정옵션에 적용할 강도 (1~5)
 '''
 def weights(option_type, option_level):
     return {
-        'blur':[1., 1., 2., 3., 4., 5.],
-        'pixel':[1., 3., 5., 7., 9., 11.]
+        'blur':[1, 1, 2, 3, 4, 5],
+        'pixel':[1, 3, 5, 7, 9, 11]
     }.get(option_type)[option_level]
 
 
