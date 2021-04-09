@@ -1,12 +1,41 @@
 ## 시작하기
 
-``` bash
-// s03p31a207/backend 디렉토리
-py manage.py runserver
+1. 패키지 설치
 
-aws 에선 
-python3 manage.py runserver
-```
+   ```bash
+   # FaceOFF/backend 디렉토리
+   $ pip install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+   $ pip intall -r requirements.txt
+   ```
+
+   - 오류 발생시
+     1. cmake 관련
+        - 오류 메시지
+          You must use Visual Studio to build a python extension on windows.  If you are getting this error it means you have not installed Visual C++.  Note that there are many flavors of Visual Studio, like Visual Studio for C# development.  You need to install Visual Studio for C++.
+        - 해결방법
+          Visual Studio의 C++ 을 선택하여 설치합니다.
+     2. UnicodeDecodeError
+        - 오류 메시지
+          UnicodeDecodeError: 'utf-8' codec can't decode byte 0xbf in position 14: invalid start byte
+        - 해결방법
+          https://godpeople.or.kr/board/3361722 를 참고하여 pip/compat/__init__.py 파일을 수정합니다
+
+2. migrate
+
+   ```bash
+   $ py manage.py makemigrations
+   $ py manage.py migrate
+   ```
+
+3. 서버 실행
+
+   ```bash
+   $ py manage.py runserver
+   ```
+
+   
+
+1. mysql 대신 sqlite3
 
 
 # models.py 를 이용해 mysqlworkbench 에 table 생성하는법 

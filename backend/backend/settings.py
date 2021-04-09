@@ -25,19 +25,17 @@ SECRET_KEY = '^26cxj%*+&iql-t*#!t)da=q3exju9)94#u16a&3_9*^l=94-e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost', 'k3a207.p.ssafy.io', '3.34.53.46']
+ALLOWED_HOSTS = ['127.0.0.1','localhost', '3.34.53.46']
 
 # Application definition
 
 # for local test
-BASE_URL="/home/ubuntu/" # for server
-# BASE_URL="../" # for local
+BASE_URL="../" # for local
 
 IMAGES_URL = BASE_URL+"images/"  
 SWAP_URL = IMAGES_URL+"swap/"
 
-MODEL_URL = BASE_URL+"backend/util/checkpoint/pfld_model_best.pth.tar" # for server
-#MODEL_URL = "/util/checkpoint/pfld_model_best.pth.tar" #for local
+MODEL_URL = "/util/checkpoint/pfld_model_best.pth.tar" #for local
 
 
 
@@ -107,25 +105,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'FACEOFF',
-        'USER': 'faceoff',
-        'PASSWORD': 'newface207',
-        'HOST': 'k3a207.p.ssafy.io',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 

@@ -2,8 +2,7 @@ import axios from 'axios';
 import { URLToBase64 } from '../util';
 
 const AXIOS = axios.create({
-  // baseURL: "http://127.0.0.1:8000/"
-  baseURL: "http://k3a207.p.ssafy.io:8000/"
+  baseURL: "http://127.0.0.1:8000/"
 });
 
 // 로드하는 데 시간이 걸리기 때문에 비동기 처리에 신경써야 함
