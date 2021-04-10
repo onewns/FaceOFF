@@ -4,11 +4,10 @@ function PicEditSticker({ state, methods }) {
   const { isAuthed, stickerBase, stickerUser, selectedStickerIdxBase, selectedStickerIdxUser } = state;
   const { fetchStickerBase, fetchStickerUser, selectSticker, addSticker, deleteSticker, showMessage, } = methods;
   
-  if (!stickerBase.length) { fetchStickerBase(); };
 
   // vars
   const typeNames = ['기본 스티커', '내 스티커'];
-  const srcBase = 'http://k3a207.p.ssafy.io/';
+  const srcBase = '/sticker/';
 
   // local state
   const [ stickerType, setStickerType ] = useState(typeNames[0]);
@@ -33,7 +32,7 @@ function PicEditSticker({ state, methods }) {
   };
 
   const Sticker = ({ item, idx }) => {
-    const imgSrc = srcBase + item.img;
+    const imgSrc = srcBase + item + '.png';
     const isUser = stickerType === '내 스티커';
     const selectedIdx = isUser ? selectedStickerIdxUser : selectedStickerIdxBase ;
 
