@@ -7,7 +7,7 @@ try {
 } catch (error) {}
 
 export function ButtonLoginKakao({ onSocialLoginSuccess }) {
-  const src = 'http://k3a207.p.ssafy.io/icon/kakao.png';
+  const src = 'icon/kakao.png';
 
   const kakaoLoginClickHandler = () => {
     Kakao.Auth.login({
@@ -33,7 +33,7 @@ export function ButtonLoginKakao({ onSocialLoginSuccess }) {
 }
 
 export function ButtonLogoutKakao({ onLogout }) {
-  const src = 'http://k3a207.p.ssafy.io/icon/logout3.png';
+  const src = 'icon/logout3.png';
 
   const logoutHandler = () => {
     Kakao.Auth.logout(() => {});

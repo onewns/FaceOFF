@@ -15,7 +15,7 @@ function ButtonFriend() {
   const adminFriendsModalShow = useSelector(
     (state:RootState) => state.modal.adminFriendsModalShow);
 
-  const friendSrc = 'http://k3a207.p.ssafy.io/icon/friends.png';
+  const friendSrc = 'icon/friends.png';
 
   // methods
   const toggleAdminFriend = () => {

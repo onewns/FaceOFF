@@ -8,7 +8,7 @@ function PicEditOptions({ state, methods }) {
   const { setOptionType } = methods;
 
   // vars
-  const baseSrc = 'http://k3a207.p.ssafy.io/icon/';
+  const baseSrc = 'icon/';
   const imgSrc = [ 'pixel.png', 'blur3.png', 'swap.png','sticker2.png']
 
   // components

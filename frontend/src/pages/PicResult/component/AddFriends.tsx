@@ -24,7 +24,7 @@ function AddFriends({ state, methods }) {
 
 
   // local vars
-  const closeSrc = 'http://k3a207.p.ssafy.io/icon/close.png';
+  const closeSrc = 'icon/close.png';
   let selected = [...addFriendSelected];
   
   // local state

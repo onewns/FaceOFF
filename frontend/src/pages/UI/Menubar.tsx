@@ -23,8 +23,8 @@ function Menubar({ state, methods }) {
   const [showMsg2, setShowMsg2] = useState(false);
 
   // vars
-  const homeSrc = 'http://k3a207.p.ssafy.io/icon/home.png';
-  const uploadSrc = 'http://k3a207.p.ssafy.io/icon/new.jpg';
+  const homeSrc = 'icon/home.png';
+  const uploadSrc = 'icon/new.jpg';
   const text = <>진행사항은 저장되지 않습니다. <br/> 메인화면으로 이동하시겠습니까?</>;
 
   useEffect(() => {

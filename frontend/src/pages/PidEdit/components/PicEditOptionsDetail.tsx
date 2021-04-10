@@ -4,7 +4,7 @@ import PicEditStickerContainer from './PicEditStickerContainer';
 function PicEditOptionsDetail({ state, methods }) {
   const { optionTypeIdx, optionLevel } = state;
   const { handleOptionLevel } = methods;
-  const sampleSrc = 'http://k3a207.p.ssafy.io/icon/';
+  const sampleSrc = 'icon/';
 
 
 

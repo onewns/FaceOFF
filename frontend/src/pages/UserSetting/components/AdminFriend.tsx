@@ -45,7 +45,7 @@ function AdminFriend({ state, methods } ) {
           <div className="base-header">
             <div>아는 얼굴 관리</div>
             <div onClick={hideAdminFriend} className="header-btn">
-            <img src="http://k3a207.p.ssafy.io/icon/close.png" alt=""/>
+            <img src="icon/close.png" alt=""/>
             </div>
           </div>
           { (friendsArray.length !==0 && !viewDetail) && 

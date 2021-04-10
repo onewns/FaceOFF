@@ -4,7 +4,7 @@ import { GoogleLogin, GoogleLogout } from 'react-google-login';
 const clientId = '237475771915-u5sqqo0e7lhvtf296fckun9g2cdrpia7.apps.googleusercontent.com'
 
 export function ButtonLoginGoogle({ onSocialLoginSuccess }) {
-  const src = 'http://k3a207.p.ssafy.io/icon/google.png';
+  const src = 'icon/google.png';
   const onSuccess = (res) => {
     onSocialLoginSuccess(res.profileObj.email, 'google')
   };
@@ -27,7 +27,7 @@ export function ButtonLoginGoogle({ onSocialLoginSuccess }) {
 }
 
 export function ButtonLogoutGoogle({ onLogout }) {
-  const src = 'http://k3a207.p.ssafy.io/icon/logout3.png';
+  const src = 'icon/logout3.png';
 
   return (
       <GoogleLogout

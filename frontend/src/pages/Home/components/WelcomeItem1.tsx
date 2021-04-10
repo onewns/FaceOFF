@@ -34,13 +34,13 @@ function WelcomeItem1() {
           <div className="example-img-wrap1">
             <div>
               <img className="example-img1" 
-                src="http://k3a207.p.ssafy.io/welcome/f1-1.jpg" alt="" />
+                src="about/original.jpg" alt="" />
               <div>원본 화면</div>
             </div>
 
             <div>
               <img className="example-img1"
-                src="http://k3a207.p.ssafy.io/welcome/f1-2.jpg" alt="" />
+                src="about/reco.jpg" alt="" />
               <div>자동 인식 화면</div>
             </div>
           </div>
@@ -57,32 +57,32 @@ function WelcomeItem1() {
             {/* 픽셀 */}
             <div>
               <img className="example-face" 
-                src="http://k3a207.p.ssafy.io/welcome/f2-1.jpg" alt="" />
+                src="about/originalFace.jpg" alt="" />
               <div>원본</div>
             </div>
 
             {/* 블러 */}
             <div>
               <img  className="example-face" 
-              src="http://k3a207.p.ssafy.io/welcome/f2-2.jpg" alt="" />
+              src="about/blur.jpg" alt="" />
               <div>블러</div>
             </div>
             {/* 픽셀 */}
             <div>
               <img className="example-face" 
-              src="http://k3a207.p.ssafy.io/welcome/f2-3.jpg" alt="" />
+              src="about/pixel.jpg" alt="" />
               <div>픽셀</div>
             </div>
             {/* 스티커 */}
             <div>
               <img className="example-face" 
-              src="http://k3a207.p.ssafy.io/welcome/f2-4.jpg" alt="" />
+              src="about/sticker.jpg" alt="" />
               <div>스티커</div>
             </div>
             {/* 가상얼굴 */}
             <div>
               <img className="example-face" 
-              src="http://k3a207.p.ssafy.io/welcome/f2-5.jpg" alt="" />
+              src="about/swap.jpg" alt="" />
               <div>가상얼굴</div>
             </div>
           </div>
@@ -99,12 +99,12 @@ function WelcomeItem1() {
             <div className="example-img-wrap1">
               <div>
                   <img className="example-img1"
-                  src="http://k3a207.p.ssafy.io/welcome/f3-1.jpg" alt="" />
+                  src="about/save.jpg" alt="" />
                   <div>다운로드 화면</div>
               </div>
               <div>
                   <img className="example-img1"
-                  src="http://k3a207.p.ssafy.io/welcome/f3-2.jpg" alt="" />
+                  src="about/friends.jpg" alt="" />
                   <div>얼굴 등록 화면</div>
               </div>
             </div>
@@ -118,7 +118,7 @@ function WelcomeItem1() {
         <div className="feature">
           <div>
             <img className="example-img1"
-            src="http://k3a207.p.ssafy.io/welcome/f4.jpg" alt="" />
+            src="about/auto.jpg" alt="" />
             <div>등록된 친구 얼굴 자동 인식</div>
           </div>
         </div>

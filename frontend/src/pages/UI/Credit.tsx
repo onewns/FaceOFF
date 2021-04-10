@@ -8,7 +8,7 @@ function Credit() {
   const { creditShow } = useSelector((state: RootState) => state.modal);
   const dispatch = useDispatch();
 
-  const srcBase = 'http://k3a207.p.ssafy.io/team/team';
+  const srcBase = 'team/team';
 
   const people = [
     { role: '백엔드', name: '문명기 (팀장)' },

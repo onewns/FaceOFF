@@ -5,7 +5,7 @@ import './Header.scss';
 function Header() {
   const history = useHistory();
   const location = useLocation();
-  const src = 'http://k3a207.p.ssafy.io/icon/favicon.png';
+  const src = '/favicon.ico';
   const [path, setPath] = useState('');
 
   useEffect(() => {

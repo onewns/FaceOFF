@@ -2,14 +2,14 @@ import React from 'react';
 
 function WelcomeItem2() {
   const srcList = [
-    "http://k3a207.p.ssafy.io/capture/00시작하기.jpg",
-    "http://k3a207.p.ssafy.io/capture/01옵션선택.jpg",
-    "http://k3a207.p.ssafy.io/capture/02대상선택.jpg",
-    "http://k3a207.p.ssafy.io/capture/03결과이미지.jpg",
-    "http://k3a207.p.ssafy.io/capture/04로그인시얼굴등록.jpg",
-    "http://k3a207.p.ssafy.io/capture/06모자이크대상제외.jpg",
-    "http://k3a207.p.ssafy.io/capture/07아는얼굴수정.jpg",
-    "http://k3a207.p.ssafy.io/capture/08커스텀스티커.jpg",
+    "capture/00시작하기.jpg",
+    "capture/01옵션선택.jpg",
+    "capture/02대상선택.jpg",
+    "capture/03결과이미지.jpg",
+    "capture/04로그인시얼굴등록.jpg",
+    "capture/06모자이크대상제외.jpg",
+    "capture/07아는얼굴수정.jpg",
+    "capture/08커스텀스티커.jpg",
   ]
   
   const textList = [
