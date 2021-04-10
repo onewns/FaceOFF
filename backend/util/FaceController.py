@@ -17,7 +17,6 @@ import random
 from django.conf import settings
 
 # MODEL_URL = settings.MODEL_URL
-SWAP_URL = settings.SWAP_URL
 import base64
 
 from django.conf import settings
@@ -345,9 +344,10 @@ def face_swap(img, swap_area):
         # cv2.imshow("s",img)
         # cv2.waitKey(0)
         
-        random_number = random.randint(0, 311)
-        
-        img2 = cv2.imread(SWAP_URL+str(random_number)+".jpg")
+        random_number = random.choice(range(312))
+        SWAP_PATH = '/'.join(os.path.abspath( __file__ ).split('\\')[:-1]) + '/fake_face/' +str(random_number)+".jpg"
+        img2 = cv2.imread(SWAP_PATH)
+
         
         height2, width2, _ = img2.shape
         img2 =  cv2.resize(img2, dsize=(0, 0), fx=2, fy=2, interpolation=cv2.INTER_LINEAR)
