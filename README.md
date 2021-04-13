@@ -1,4 +1,4 @@
-# FaceOFF ![FaceOFF](README.assets/favicon.png){: width="100px" height="100px"}
+# FaceOFF <img src="README.assets/favicon.png" alt="FaceOFF" width="50px" />
 
 ##### :warning: 로컬환경에서 테스트하기 위한 수정버전입니다. 일부 기능은 동작하지 않을 수 있습니다.
 
