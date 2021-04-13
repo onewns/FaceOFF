@@ -1,4 +1,4 @@
-# FaceOFF <img src="README.assets/favicon.png" alt="FaceOFF" width="50px" />
+# FaceOFF <img src="README.assets/favicon.png" alt="FaceOFF" width="30px" />
 
 ##### :warning: 로컬환경에서 테스트하기 위한 수정버전입니다. 일부 기능은 동작하지 않을 수 있습니다.
 
@@ -72,27 +72,27 @@
 
 ### 시작하기
 
-- Backend 서버 실행
+- Backend
 
-  - 패키지 설치
+  1. 패키지 설치
 
-    ```bash
-    # FaceOFF/backend 디렉토리
-    $ pip install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
-    $ pip intall -r requirements.txt
-    ```
+     ```bash
+      # FaceOFF/backend 디렉토리
+     $ pip install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+     $ pip intall -r requirements.txt
+     ```
 
-    - 오류 발생시
-      1. cmake 관련
-         - 오류 메시지
-           You must use Visual Studio to build a python extension on windows.  If you are getting this error it means you have not installed Visual C++.  Note that there are many flavors of Visual Studio, like Visual Studio for C# development.  You need to install Visual Studio for C++.
-         - 해결방법
-           Visual Studio의 C++ 을 선택하여 설치합니다.
-      2. UnicodeDecodeError
-         - 오류 메시지
-           UnicodeDecodeError: 'utf-8' codec can't decode byte 0xbf in position 14: invalid start byte
-         - 해결방법
-           https://godpeople.or.kr/board/3361722 를 참고하여 pip/compat/__init__.py 파일을 수정합니다
+     - 오류 발생시
+       1. cmake 관련
+          - 오류 메시지
+            You must use Visual Studio to build a python extension on windows.  If you are getting this error it means you have not installed Visual C++.  Note that there are many flavors of Visual Studio, like Visual Studio for C# development.  You need to install Visual Studio for C++.
+          - 해결방법
+            Visual Studio의 C++ 을 선택하여 설치합니다.
+       2. UnicodeDecodeError
+          - 오류 메시지
+            UnicodeDecodeError: 'utf-8' codec can't decode byte 0xbf in position 14: invalid start byte
+          - 해결방법
+            https://godpeople.or.kr/board/3361722 를 참고하여 pip/compat/__init__.py 파일을 수정합니다
 
   2. migrate
 
@@ -107,6 +107,7 @@
      $ py manage.py runserver
      ```
 
+     
 
 
 - Frontend
